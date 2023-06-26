@@ -20,7 +20,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding:EdgeInsets.symmetric(vertical: MediaQuery.of(context).padding.top),
+        padding:
+            EdgeInsets.symmetric(vertical: MediaQuery.of(context).padding.top),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -158,9 +159,9 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Icon(
-            Icons.ac_unit_outlined,
-            color: Colors.blue,
+          Image.asset(
+            'assets/images/logo_img.png',
+            height: 32,
           ),
           Row(
             children: [
@@ -179,7 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               ClipOval(
                 child: Image.asset(
-                  'assets/images/smile_flower.png',
+                  'assets/images/avatar_img.png',
                   height: 32,
                 ),
               )
